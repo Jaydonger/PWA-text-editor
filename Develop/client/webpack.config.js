@@ -27,10 +27,11 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
 
-      new GenerateSW(),
+      // new GenerateSW(),
 
       new WebpackPwaManifest({
         name: 'Jate Progressive Web App',
+        fingerprints: false,
         short_name: 'JatePWA',
         description: 'Just another text editor!',
         Start_url: './',
